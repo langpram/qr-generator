@@ -66,5 +66,5 @@ def generate():
         })
 
 # ====== Handler untuk Vercel ======
-def handler(request):
-    return app(request.environ, lambda *args: None)
+app = Flask(__name__)
+
